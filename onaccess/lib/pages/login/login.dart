@@ -16,6 +16,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: PaletaCores.branco(),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -46,7 +47,7 @@ class _LoginState extends State<Login> {
                   color: PaletaCores.cinza01(),
                   fontSize: 25,
                   fontFamily: 'Baloo',
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                 ),
               ),
             ),
@@ -82,7 +83,7 @@ class _LoginState extends State<Login> {
                   color: PaletaCores.cinza01(),
                   fontSize: 25,
                   fontFamily: 'Baloo',
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w300,
                 ),
               ),
             ),
@@ -109,6 +110,19 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ],
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "Esqueceu a senha?",
+                style: TextStyle(
+                  color: PaletaCores.azul01(),
+                  decoration: TextDecoration.underline,
+                  fontFamily: 'Baloo',
+                  fontWeight: FontWeight.w100,
+                  fontSize: 18,
+                ),
+              ),
             ),
           ],
         ),
